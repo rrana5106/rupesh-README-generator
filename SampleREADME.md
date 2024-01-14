@@ -1,17 +1,9 @@
-function renderLicenseBadge(license) {
-  if (license !== "None") {
-    return `![badmath](https://img.shields.io/badge/license-${license}-blue)`;
-  }
-}
-
-// function to generate markdown for README
-function generateMarkdown(data) {
-  return `# Title
-   ${data.title}
+# Title
+   test
 
    ## Badges
    
-   ${renderLicenseBadge(data.license)}
+   ![badmath](https://img.shields.io/badge/license-MIT-blue)
 
    ## Description
      
@@ -41,7 +33,4 @@ function generateMarkdown(data) {
    ## Tests
 
    ## Questions
-   `;
-}
-
-module.exports = generateMarkdown;
+   
