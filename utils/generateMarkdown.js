@@ -1,19 +1,20 @@
 function renderLicenseBadge(license) {
   if (license !== "None") {
-    return `![badmath](https://img.shields.io/badge/license-${license}-blue)`;
+    return `![License](https://img.shields.io/badge/license-${license}-brightgreen)`;
   }
 }
 
 // function to generate markdown for README
 function generateMarkdown(data) {
-  return `# Title
-   ${data.title}
+  return `# ${data.title}
 
    ## Badges
    
    ${renderLicenseBadge(data.license)}
 
    ## Description
+
+   ${data.description}
      
    ## Table of Contents (Optional)
       
@@ -21,27 +22,46 @@ function generateMarkdown(data) {
    - [Usage](#usage)
    - [Credits](#credits)
    - [License](#license)
+   - [Features](#features)
+   - [Contribute](#contribute)
+   - [Tests](#tests)
+   - [Questions](#questions)
    
    ## Installation
-      
-   ## Usage
+
+    ${data.installation}
    
-   ![alt text](assets/images/screenshot.png)
-      
+  ## Usage
+
+   ${data.usage}
+   
    ## Credits   
-     
+   
+   ${data.credits}
+   
    ## License
-      
+   
+   ${renderLicenseBadge(data.license)}
+
    ## Features
    
-   If your project has a lot of features, list them here.
+   ${data.features}
    
-   ## How to Contribute
+   ## Contribute
+
+   ${data.contributions}
    
    ## Tests
+   
+  ${data.test}
 
    ## Questions
+
+   If you have any question, feel free to reach out to me via [GitHub](https://github.com/${
+     data.username
+   }) or email me at ${data.email}
    `;
 }
 
+// it export the generateMarkdown function
 module.exports = generateMarkdown;
