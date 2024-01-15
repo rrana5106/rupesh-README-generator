@@ -12,6 +12,7 @@ This project has been designed with the purpose of streamlining the process of g
 
 - [Installation](#installation)
 - [Usage](#usage)
+- [Walkthrough Video](#walkthrough-video)
 - [Credits](#credits)
 - [License](#license)
 - [Features](#features)
@@ -27,7 +28,9 @@ This project has been designed with the purpose of streamlining the process of g
 
 - node index.js
 
-[DEMO Video](https://www.youtube.com)
+## Walkthrough Video
+
+[Click here for walkthrough video](https://drive.google.com/file/d/1rAwDMtGN6ZA2jF7WkXCb5gbyhiTB8efZ/view)
 
 ## Credits
 
@@ -52,5 +55,3 @@ This project has been designed with the purpose of streamlining the process of g
 ## Questions
 
 If you have any questions, feel free to reach out to me via [GitHub](https://github.com/rrana5106) or email me at example@example.com.
-
-
